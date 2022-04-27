@@ -1,0 +1,186 @@
+:root{
+    --theme-accent: #FFC700;
+    --theme-main: #FFFFFF;
+    --theme-bgd: #222527;
+}
+
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* =======HERO+++++++ */
+
+header{
+    padding: 32px 0 72px 0;
+}
+
+.about {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.about-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 18%;
+}
+
+.social-link{
+    margin-bottom: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-link svg{
+    fill: var(--theme-accent);
+}
+
+.about-name{
+    font-family: 'Russo One',
+    sans-serif;
+    color: var(--theme-accent);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.about-profession{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: var(--theme-main);
+}
+
+.about-positions{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-accent);
+    margin-bottom: 8px;
+    list-style: disc;
+    margin-left: 18px;
+}
+
+.about-profession-text{
+    color: var(--theme-main);
+}
+
+.about-button{
+    border: 0;
+    outline: 0;
+    margin-top: 24px;
+    padding: 16px 32px 16px 32px;
+    background: var(--theme-accent);
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.about-description{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+    width: 374px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-content-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.darth-vader-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.death-star-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    bottom: -100px;
+    opacity: 0.4;
+}
+
+/* =======achivements+++++++ */
+
+.achivements{
+    padding: 60px 0;
+    background-color: var(--theme-bgd);
+}
+
+.achivements-header{
+    color: var(--theme-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.achivements-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.achivements-item{
+    width: 25%;
+}
+
+.achivements-icon{
+    width: 60px;
+    height: 60px;
+}
+
+.achivements-item-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-accent);
+    margin: 32 0 4 0;
+}
+
+.achivements-item-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+}
