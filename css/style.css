@@ -31,6 +31,11 @@ header{
     padding: 32px 0 72px 0;
 }
 
+.logo:hover,
+.logo:focus{
+    transform: scale(1.2);
+}
+
 .about {
     height: 100%;
     width: 100%;
@@ -54,6 +59,11 @@ header{
     margin-bottom: 20px;
     width: 24px;
     height: 24px;
+}
+
+.social-link:hover,
+.social-link:focus{
+    transform: scale(1.2);
 }
 
 .social-link svg{
@@ -99,6 +109,11 @@ header{
     background: var(--theme-accent);
     border-radius: 28px;
     cursor: pointer;
+}
+
+.about-button:hover,
+.about-button:focus{
+    transform: scale(1.2);
 }
 
 .about-description{
@@ -183,4 +198,70 @@ header{
     font-size: 16px;
     line-height: 1.5;
     color: var(--theme-main);
+}
+
+/* =======codex+++++++ */
+
+.codex{
+    padding: 186px 0;
+    background-image: url('../img/space.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.codex .container{
+    flex-direction: row;
+}
+
+.codex-motto{
+    font-family: 'Russo One',
+    sans-serif;
+    color: var(--theme-accent);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.3;
+}
+
+.codex-left-side,.codex-right-side {
+    width: 50%;
+}
+
+.codex-title{
+    color: var(--theme-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.codex-text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+    margin-bottom: 4px;
+}
+
+.codex-text-last{
+    margin-bottom: 60px;
+}
+
+/* =======footer+++++++ */
+
+.footer{
+    background-color: var(--theme-bgd);
+    padding: 60px 0 60px 0;
+}
+
+.footer .container{
+    align-items: center;
+}
+
+.footer-title{
+    color: var(--theme-main);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 54px;
+    width: 760px;
 }
