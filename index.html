@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/switcher.css" />
   </head>
   <body>
     <!-- HERO -->
@@ -48,6 +49,14 @@
               />
             </svg>
           </a>
+          <div class="switcher">
+            <button class="switcher-theme-name">Dark</button>
+            <label class="switch">
+              <input type="checkbox" id="theme-switch" />
+              <span class="slider round"></span>
+            </label>
+            <button class="switcher-theme-name">Light</button>
+          </div>
         </header>
         <div class="about-content">
           <h2 class="about-profession">Владыка Ситх</h2>
@@ -386,7 +395,7 @@
     </footer>
     <!-- Модальное окно 1 -->
     <div class="modal-conteiner" id="modal-form">
-      <form action="#" class="modal-form">
+      <form action="#" class="modal-form" netlify>
         <button class="close-icon" id="modal-form-close">
           <svg
             width="14"
@@ -475,5 +484,6 @@
       </div>
     </div>
     <script src="./js/form.js"></script>
+    <script src="./js/switcher.js"></script>
   </body>
 </html>

@@ -2,7 +2,8 @@
     --theme-accent: #FFC700;
     --theme-main: #FFFFFF;
     --theme-bgd: #222527;
-    --theme-modal-bgd: #E5E5E5;
+    --theme-modal-bgd: rgb(239 236 236 / 90%);
+    --theme-btn-text: #060803;
 }
 
 
@@ -30,6 +31,13 @@ body{
 
 header{
     padding: 32px 0 72px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .achivements-icon svg, .footer svg, .modal-success-icon svg{
+    fill: var(--theme-accent);
 }
 
 .logo:hover,
@@ -110,6 +118,7 @@ header{
     background: var(--theme-accent);
     border-radius: 28px;
     cursor: pointer;
+    color: var(--theme-btn-text);
 }
 
 .about-button:hover,
@@ -185,6 +194,10 @@ header{
     width: 60px;
     height: 60px;
 }
+
+/* .achivements-icon svg{
+    fill: var(--theme-accent);
+} */
 
 .achivements-item-title{
     font-weight: 700;
@@ -360,6 +373,7 @@ header{
     cursor: pointer;
     width: 207px;
     margin: 16px auto 0 auto;
+    color: var(--theme-btn-text);
     }
 
 .modal-form-submit:hover, .modal-form-submit:focus{
@@ -378,8 +392,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
-}
+    }
 
 .modal-success-title{
     font-weight: 700;
@@ -397,4 +410,13 @@ header{
     text-align: center;
     margin-bottom: 32px;
     width: 440px;
+}
+
+.close-icon svg{
+    fill: var(--theme-main);
+}
+
+.about--light,
+.codex--light {
+    background-image: url("../img/stardust.jpg");
 }
