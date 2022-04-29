@@ -2,6 +2,7 @@
     --theme-accent: #FFC700;
     --theme-main: #FFFFFF;
     --theme-bgd: #222527;
+    --theme-modal-bgd: #E5E5E5;
 }
 
 
@@ -264,4 +265,136 @@ header{
     text-align: center;
     margin-bottom: 54px;
     width: 760px;
+}
+
+/* Модальное окно 1 */
+
+.modal-conteiner{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-modal-bgd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-form{
+    padding: 40px 80px;
+    background-color: var(--theme-bgd);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.close-icon{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.close-icon:hover, .close-icon:focus{
+    transform: scale(1.2);
+}
+
+.modal-form-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-accent);
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.modal-form-text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-name, .modal-form-email {
+    margin-bottom: 16px;
+    width: 440px;
+    height: 40px;
+    border: 1px solid var(--theme-main);
+    padding: 4px;
+    box-sizing: border-box;
+    background: none;
+    color: var(--theme-main);
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+.modal-form-field-label{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+    margin-bottom: 4px;
+    }
+
+.modal-form-submit{
+    border: 0;
+    outline: 0;
+    padding: 16px 32px 16px 32px;
+    background: var(--theme-accent);
+    border-radius: 28px;
+    cursor: pointer;
+    width: 207px;
+    margin: 16px auto 0 auto;
+    }
+
+.modal-form-submit:hover, .modal-form-submit:focus{
+    transform: scale(1.2);
+}
+
+.modal-active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-success{
+    padding: 40px 80px 88px 80px;
+    background-color: var(--theme-bgd);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+.modal-success-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-accent);
+    margin-bottom: 112px;
+    text-align: center;
+}
+
+.modal-success-text{
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--theme-main);
+    text-align: center;
+    margin-bottom: 32px;
+    width: 440px;
 }
