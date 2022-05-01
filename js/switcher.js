@@ -21,13 +21,14 @@ const element = document.documentElement;
 function switchTheme () {
     const aboutMeContainer = document.querySelector('.about');
     const factsContainer = document.querySelector('.codex');
-
+// замена цветов в темах
     if (currentTheme === 'dark') {
         element.style.setProperty('--theme-accent', lightTheme.accent);
         element.style.setProperty('--theme-main', lightTheme.main);
         element.style.setProperty('--theme-bgd', lightTheme.bgd);
         element.style.setProperty('--theme-modal-bgd', lightTheme.modalBgd);
         element.style.setProperty('--theme-btn-text', lightTheme.btnText);
+        element.style.setProperty('--theme-moto-text', '#7a7982');
 
         aboutMeContainer.classList.add('about--light');
         factsContainer.classList.add('codex--light');
@@ -39,6 +40,7 @@ function switchTheme () {
         element.style.setProperty('--theme-bgd', darkTheme.bgd);
         element.style.setProperty('--theme-modal-bgd', darkTheme.modalBgd);
         element.style.setProperty('--theme-btn-text', darkTheme.btnText);
+        element.style.setProperty('--theme-moto-text', '#ffffff');
 
         aboutMeContainer.classList.remove('about--light');
         factsContainer.classList.remove('codex--light');
